@@ -84,8 +84,8 @@ def process_data(
     # Replace values -1 and 0
     df = replace_values(df)
 
-    #     # Drop columns
-    #     df = drop_columns(df)
+    # Drop columns
+    df = drop_columns(df)
 
     # Drop lines with NaN values
 
