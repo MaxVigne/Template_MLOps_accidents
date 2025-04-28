@@ -75,20 +75,19 @@ def process_data(
     # Merge datasets
     df = merge_datasets(df_users, df_veh, df_places, df_caract)
 
-    #     # Add new columns
-    #     df = add_new_columns(df, nb_victim, nb_vehicules)
-    #
+    # Add new columns
+    df = add_new_columns(df, nb_victim, nb_vehicules)
+
     #     # Modify target variable
     #     df = modif_target_variable(df)
-    #
+
     #     # Replace values -1 and 0
     #     df = replace_values(df)
-    #
+
     #     # Drop columns
     #     df = drop_columns(df)
-    #
-    #     # Drop lines with NaN values
-    #
+
+    # Drop lines with NaN values
 
     # Split data into training and testing sets
     X_train, X_test, y_train, y_test = split_data(df)
